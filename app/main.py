@@ -1,4 +1,10 @@
-def sum( a, b):
-    return a + b
+from fastapi import FastAPI
+#from app.api.routes import auth,articles 
 
-sum (5,10)
+app = FastAPI()
+
+@app.get("/")
+def health_check():
+    return {"status":"ok"}
+
+
