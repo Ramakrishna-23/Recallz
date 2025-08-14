@@ -7,3 +7,4 @@ DB schema
 
 1. put logic layer / repo layer afterwards
    2.in bookmark table, tags = Column(ARRAY(String), nullable=False), Might be better to use nullable=True with a default empty list in Python/repository layer.
+   e
